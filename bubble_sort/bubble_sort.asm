@@ -44,7 +44,6 @@ mov ebp, esp
 push eax
 push ebx
 push ecx
-push edx
 .start:
 mov ecx, 0
 .loop:
@@ -64,7 +63,6 @@ inc ecx
 cmp ecx, [num_numbers]
 jl .loop
 .end:
-pop edx
 pop ecx
 pop ebx
 pop eax
